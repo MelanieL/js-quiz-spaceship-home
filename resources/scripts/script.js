@@ -4,6 +4,11 @@ shipHome.answers = {
     nostromo: 0,
     milano: 0,
     millfalc: 0, 
+    enterprise: 0,
+    bsg: 0,
+    serenity: 0,
+    eaglefive: 0,
+    rocinante: 0
 };
 
 // Need to allow user to only select one answer to each question
