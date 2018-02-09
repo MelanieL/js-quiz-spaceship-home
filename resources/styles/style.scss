@@ -1,0 +1,9 @@
+@import "components/normalize";
+@import "components/base";
+@import "components/typography";
+
+// Hide answers on load - JS will show
+
+.answer_box {
+    display: none;
+}

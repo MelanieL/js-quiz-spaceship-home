@@ -58,7 +58,6 @@ shipHome.events = function () {
         };
         // This is where question 5 starts
         const shipValQ5 = $('input[name="q5"]:checked').attr('class');
-        // console.log(shipValQ5);
         const shipArrayQ5 = shipValQ5.split(" ");
         for (let key in shipHome.answers) {
             shipArrayQ5.forEach(function (item) {
@@ -66,18 +65,61 @@ shipHome.events = function () {
                     shipHome.answers[key] = shipHome.answers[key] + 1
                 }
             });
-        };
+        };        
+
         console.log(shipHome.answers);
-        // This is where questions end
-        // This is where answer generation begins
-        return shipHome.answers;
-        const finalAnswer = Math.max(shipHome.answers);
-        // console.log(finalAnswer);
+        const finalAnswerArray = $.map(shipHome.answers, function(index, value){
+            return [[value,index]];
+        });
+        console.log(finalAnswerArray);
+
+        const final = _.max(finalAnswerArray, function(finalAnswer){
+            return finalAnswer[1];
+        });
+
+        console.log(final);
+
+        const finalDisplay = final[0];
+
+        console.log(finalDisplay);
+
+        if (finalDisplay === "nostromo"){
+            console.log("nostromo!");
+            $('.result_nostromo').show();
+            event.preventDefault();
+        }
+        else if (finalDisplay === "milano"){
+            console.log("milano!");
+        }
+        else if (finalDisplay === "millfalc") {
+            console.log("millfalc!");
+        }
+        else if (finalDisplay === "enterprise") {
+            console.log("enterprise!");
+        }
+        else if (finalDisplay === "bsg") {
+            console.log("bsg!");
+        }
+        else if (finalDisplay === "serenity") {
+            console.log("serenity!");
+        }
+        else if (finalDisplay === "eaglefive") {
+            console.log("eaglefive!");
+        }
+        else if (finalDisplay === "rocinante") {
+            console.log("rocinante!");
+        }
+        else {
+            console.log("something went wrong!");
+        }
+
     });
 }
 
 shipHome.init = function () {
     shipHome.events();
+    $('input').prop('checked', false);
+    // $('.answer_box').hide();
 }
 
 $(function(){
@@ -86,7 +128,8 @@ $(function(){
 
 // Need to allow user to only select one answer to each question - Done
 // On submit, need add +1 to each property in shipHome where the answer was ticked - Done
-// Need to evaluate totals for each ship
-// Need to determine which ship is the highest number
+// Need to evaluate totals for each ship - Done
+// Need to determine which ship is the highest number - Done
+// Need to display only the ship that is the answer on submit, the rest are always hidden
 // Need to also determine what happens if there is a tie (random?)
 // Need to display ship/answer

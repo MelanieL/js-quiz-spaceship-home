@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A Ship to Call Home</title>
+    <link rel='stylesheet' type='text/css' href='resources/styles/style.css'>
 
 </head>
 <body>
@@ -59,9 +60,39 @@
             <label for="department">A department or group of mechanics/engineers</label>
             <input type="radio" class="answer nostromo bsg enterprise" name="q5" id="department" value "1">
         </div>
-        <input type="submit" value="Call Home">
+        <input type="submit" value="Beam Me Up!">
     </form>
-    <div class="result"></div>
+    <input class="reset_button" type="submit" value="I don't belong here!">
+    
+    <!-- This is where the answer divs start -->
+    <div class="answer_box result_nostromo">
+        <img src="resources/images/ship_nostromo.png" alt="drawing of the nostromo">
+    </div>
+    <div class="answer_box result_milano">
+        <img src="resources/images/ship_milano.png" alt="drawing of the milano">
+    </div>
+    <div class="answer_box result_millfalc">
+        <img src="resources/images/ship_falcon.png" alt="drawing of the millenium falcon">
+    </div>
+    <div class="answer_box result_enterprise">
+        <img src="resources/images/ship_enterprise.png" alt="drawing of the enterprise">
+    </div>
+    <div class="answer_box result_bsg">
+        <img src="resources/images/ship_battlestar.png" alt="drawing of the battlestar gallactica">
+    </div>
+    <div class="answer_box result_serenity">
+        <img src="resources/images/ship_serenity.png" alt="drawing of the serenity">
+    </div>
+    <div class="answer_box result_eaglefive">
+        <img src="resources/images/ship_eagle5.png" alt="drawing of the eagle five">
+    </div>
+    <div class="answer_box result_rocinante">
+        <img src="resources/images/ship_rocinante.png" alt="drawing of the rocinante">
+    </div>
+
+
+    <!-- This is where the scripts begin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script type="text/javascript" src="resources/scripts/script.js"></script>
 </body>
