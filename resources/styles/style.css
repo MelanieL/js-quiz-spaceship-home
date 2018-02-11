@@ -716,11 +716,9 @@ img {
   align-items: center; }
 
 .answer_box {
+  display: none;
   background: #666666;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;

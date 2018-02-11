@@ -71,10 +71,9 @@ img {
 
 // Hide answers on load - JS will show
 .answer_box {
-    // display: none;
+    display: none;
     background: $color2;
     border-radius: 10px;
-    display: flex;
     flex-direction: column;
     margin: 50px 20px;
     padding: 20px 20px;
