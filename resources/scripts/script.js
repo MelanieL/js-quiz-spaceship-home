@@ -67,60 +67,65 @@ shipHome.events = function () {
             });
         };        
 
-        console.log(shipHome.answers);
+        // This is where the answer tally & display starts
         const finalAnswerArray = $.map(shipHome.answers, function(index, value){
             return [[value,index]];
         });
-        console.log(finalAnswerArray);
 
         const final = _.max(finalAnswerArray, function(finalAnswer){
             return finalAnswer[1];
         });
 
-        console.log(final);
-
         const finalDisplay = final[0];
 
-        console.log(finalDisplay);
-
         if (finalDisplay === "nostromo"){
-            console.log("nostromo!");
             $('.result_nostromo').show();
             event.preventDefault();
         }
         else if (finalDisplay === "milano"){
-            console.log("milano!");
+            $('.result_milano').show();
+            event.preventDefault();
         }
         else if (finalDisplay === "millfalc") {
-            console.log("millfalc!");
+            $('.result_millfalc').show();
+            event.preventDefault();
         }
         else if (finalDisplay === "enterprise") {
-            console.log("enterprise!");
+            $('.result_enterprise').show();
+            event.preventDefault();
         }
         else if (finalDisplay === "bsg") {
-            console.log("bsg!");
+            $('.result_bsg').show();
+            event.preventDefault();
         }
         else if (finalDisplay === "serenity") {
-            console.log("serenity!");
+            $('.result_serenity').show();
+            event.preventDefault();
         }
         else if (finalDisplay === "eaglefive") {
-            console.log("eaglefive!");
+            $('.result_eaglefive').show();
+            event.preventDefault();
         }
         else if (finalDisplay === "rocinante") {
-            console.log("rocinante!");
+            $('.result_rocinante').show();
+            event.preventDefault();
         }
         else {
             console.log("something went wrong!");
         }
-
     });
-}
+
+    // This is where the reset command starts
+    $('.reset_button').click(function () {
+        location.reload();
+    });
+
+    };
 
 shipHome.init = function () {
     shipHome.events();
     $('input').prop('checked', false);
-    // $('.answer_box').hide();
-}
+};
 
 $(function(){
     shipHome.init();

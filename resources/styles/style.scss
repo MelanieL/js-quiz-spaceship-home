@@ -1,9 +1,125 @@
 @import "components/normalize";
 @import "components/base";
 @import "components/typography";
+@import "components/starwarsscroll";
+
+body    {
+    background-attachment: fixed;
+    background-image: url(../images/background.jpeg);
+    background-repeat: repeat;
+}
+
+header  {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+section, footer {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+img {
+    width: 100%;
+}
+
+.question   {
+    background: $color5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.button {
+    background: $color3;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 55px;
+    font-size: 18px;
+    width: 150px;
+}
+
+.form_buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 80%;
+}
+
+.answer_wrapper {
+    align-items: center;
+}
 
 // Hide answers on load - JS will show
-
 .answer_box {
-    display: none;
+    // display: none;
+    background: $color2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+    padding: 20px 20px;
+    width: 90%;
+}
+
+.answer_box_title {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.answer_box_title h2,
+.answer_box_title h3 {
+    margin-left: 4%;
+    margin-right: 0;
+}
+
+.answer_box_imgdiv {
+    opacity: 0.5;
+    width: 100%;
+}
+
+.answer_box_bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.answer_box_bottom p {
+    padding: 0px 10px;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+footer p:first-of-type {
+    text-align: left;
+    width: 40%;
+}
+
+footer p:last-of-type {
+    text-align: right;
+    width: 40%;
 }

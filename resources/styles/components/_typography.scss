@@ -1,0 +1,23 @@
+$font-title: 'Orbitron', sans-serif;
+$font-text: 'Raleway', sans-serif;
+
+body    {
+    color: white;
+    font-family: $font-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: $font-title;
+    font-weight: 700;
+    text-align: center;
+}
+
+.questiononly {
+    font-family: $font-title;
+}
+
+.movie_title {
+    font-style: italic;
+}
+

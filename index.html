@@ -5,91 +5,225 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A Ship to Call Home</title>
+    <!-- Favicon from the noun project: Star by Ilaria Bernareggi from the Noun Project -->
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/images/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="resources/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="resources/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="resources/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="resources/images/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="resources/images/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="resources/images/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="resources/images/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="resources/images/largetile.png" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900|Raleway:400,400i,500,500i,700" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='resources/styles/style.css'>
 
 </head>
 <body>
-    <h1>A Ship to Call Home</h1>
-    <form>
-        <div class="question1 question">
-            <p class="questiononly">1 - How do you feel about having an animal on board?</p>
-            <label for="fur" class="answer">I don’t mind a little fur</label>
-            <input type="radio" class="nostromo milano millfalc enterprise eaglefive" name="q1" id="fur" value="1">
-            <label for="hardno" class="answer">Hard no</label>
-            <input type="radio" class="bsg serenity rocinante" name="q1" id="hardno" value="1">
+        <header class="star-wars">
+            <div class="crawl">
+                <!-- <div class="tile"> -->
+                    <h1>A Ship to Call Home</h1>
+                    <h2>In your galaxy, <span style="white-space: nowrap;">far far away...</span></h2>
+                <!-- </div> -->
+                <p>Use this quiz to determine which pop culture ship would be best suited to your otherwordly ways!</p>
+            </div>
+        </header>
+        <section>
+            <div class="wrapper">
+                <form>
+                    <div class="question1 question">
+                        <p class="questiononly">1. How do you feel about having an animal on board?</p>
+                        <label for="fur" class="answer">
+                            <p><input type="radio" class="nostromo milano millfalc enterprise eaglefive" name="q1" id="fur" value="1"> I don’t mind a little fur</p>
+                        </label>
+                        <label for="hardno" class="answer">
+                            <p><input type="radio" class="bsg serenity rocinante" name="q1" id="hardno" value="1"> Hard no</p>
+                        </label>
+                        
+                    </div>
+                    <div class="question2 question">
+                        <p class="questiononly">2. Your shipmate bestie is:</p>
+                        <label for="lady">
+                            <p><input type="radio" class="answer nostromo bsg rocinante" name="q2" id="lady" value "1"> A badass lady</p>
+                        </label>
+                        <label for="smartass">
+                            <p><input type="radio" class="answer milano" name="q2" id="smartass" value "1"> A smart ass</p>
+                        </label>
+                        <label for="herodick">
+                            <p><input type="radio" class="answer millfalc eaglefive" name="q2" id="herodick" value "1"> A hero, but also kind of a dick</p>
+                        </label>
+                        <label for="orangehat">
+                            <p><input type="radio" class="answer firefly" name="q2" id="orangehat" value "1"> A guy with an orange knitted hat</p>
+                        </label>
+                        <label for="android">
+                            <p><input type="radio" class="answer enterprise" name="q2" id="android" value "1"> An android</p>
+                        </label>
+                    </div>
+                    <div class="question3 question">
+                        <p class="questiononly">3. Your ideal ship size is:</p>
+                        <label for="large">
+                            <p><input type="radio" class="answer enterprise bsg" name="q3" id="large" value "1"> Large, the more the merrier</p>
+                        </label>
+                        <label for="small">
+                            <p><input type="radio" class="answer nostromo milano millfalc serenity eaglefive rocinante" name="q3" id="small" value "1"> A tight knit crew</p>
+                        </label>
+                    </div>
+                    <div class="question4 question">
+                        <p class="questiononly">4. Your core purpose is:</p>
+                        <label for="research">
+                            <p><input type="radio" class="answer nostromo" name="q4" id="research" value "1"> Reasearch</p>
+                        </label>
+                        <label for="exploration">
+                            <p><input type="radio" class="answer enterprise" name="q4" id="exploration" value "1"> Exploration</p>
+                        </label>
+                        <label for="smuggling">
+                            <p><input type="radio" class="answer millfalc serenity eaglefive" name="q4" id="smuggling" value "1"> Smuggling</p>
+                        </label>
+                        <label for="shooten">
+                            <p><input type="radio" class="answer milano" name="q4" id="shooten" value "1"> Shoot'n</p>
+                        </label>
+                        <label for="colonize">
+                            <p><input type="radio" class="answer bsg rocinante" name="q4" id="colonize" value "1"> Colonization</p>
+                        </label>
+                    </div>
+                    <div class="question5 question">
+                        <p class="questiononly">5. Your maintenance is performed by:</p>
+                        <label for="skilled">
+                            <p><input type="radio" class="answer milano serenity rocinante" name="q5" id="skilled" value "1"> A skilled mechanic</p>
+                        </label>
+                        <label for="questionable">
+                            <p><input type="radio" class="answer millfalc eaglefive" name="q5" id="questionable" value "1"> A questionable mechanic</p>
+                        </label>
+                        <label for="department">
+                            <p><input type="radio" class="answer nostromo bsg enterprise" name="q5" id="department" value "1"> A department or group of mechanics/engineers</p>
+                        </label>
+                    </div>
+                    <div class="form_buttons">
+                        <input class="button submit_button" type="submit" value="Beam Me Up!">
+                        <input class="button reset_button" type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <!-- This is where the answer divs start -->
+        <section>
+            <div class="wrapper answer_wrapper">
+                <div class="answer_box result_nostromo">
+                    <div class="answer_box_title">
+                        <h3>Your home ship is:</h3>
+                        <h2>The Nostromo</h2>
+                    </div>
+                    <div class="answer_box_bottom">
+                        <div class="answer_box_imgdiv">
+                            <img src="resources/images/ship_nostromo.png" alt="drawing of the nostromo">
+                        </div>
+                        <p>Your home is aboard the USCSS Nostromo from the movie <span class="movie_title">Alien</span>. You aren't afraid to get your hands dirty, and you aren't easily intimidated. You also like cats.</p>
+                    </div>
+                </div>
+                <div class="answer_box result_milano">
+                    <div class="answer_box_title">
+                        <h3>Your home ship is:</h3>
+                        <h2>The Milano</h2>
+                    </div>
+                    <div class="answer_box_bottom">
+                        <div class="answer_box_imgdiv">
+                            <img src="resources/images/ship_milano.png" alt="drawing of the milano">
+                        </div>
+                        <p>Your home is aboard the Milano from the movie <span class="movie_title">Guardians of the Galaxy</span>. You aren't afraid to crack a joke, and you often run into situations without a plan. You also like raccoons.</p>
+                    </div>
+                </div>
+                <div class="answer_box result_millfalc">
+                    <div class="answer_box_title">
+                        <h3>Your home ship is:</h3>
+                        <h2>The Millenium Falcon</h2>
+                    </div>
+                    <div class="answer_box_bottom">
+                        <div class="answer_box_imgdiv">
+                            <img src="resources/images/ship_falcon.png" alt="drawing of the millenium falcon">
+                        </div>
+                        <p>Your home is aboard the Millenium Falcon from the movie <span class="movie_title">Star Wars</span>. You aren't afraid of adventure, and you enjoy being surrounded by an assortment of personalities. You also like wookies.</p>
+                    </div>
+                </div>
+                <div class="answer_box result_enterprise">
+                    <div class="answer_box_title">
+                        <h3>Your home ship is:</h3>
+                        <h2>The Enterprise</h2>
+                    </div>
+                    <div class="answer_box_bottom">
+                        <div class="answer_box_imgdiv">
+                            <img src="resources/images/ship_enterprise.png" alt="drawing of the enterprise">
+                        </div>
+                        <p>Your home is aboard the Enterprise from the tv series <span class="movie_title">Star Trek</span>. You love a constant change of scenery, and you enjoy learning new things. You also like red shirts.</p>
+                    </div>
+                </div>
+                <div class="answer_box result_bsg">
+                    <div class="answer_box_title">
+                        <h3>Your home ship is:</h3>
+                        <h2>Battlestar Galactica</h2>
+                    </div>
+                    <div class="answer_box_bottom">
+                        <div class="answer_box_imgdiv">
+                            <img src="resources/images/ship_battlestar.png" alt="drawing of the battlestar galactica">
+                        </div>
+                        <p>Your home is aboard the Battlestar Galactica from the tv series <span class="movie_title">Battlestar Galactica</span>. You are always ready for a fight, and you are constantly on the lookout for people who aren't what they seem. You also like to swear a frakking lot.</p>
+                    </div>
+                </div>
+                <div class="answer_box result_serenity">
+                    <div class="answer_box_title">
+                        <h3>Your home ship is:</h3>
+                        <h2>Serenity</h2>
+                    </div>
+                    <div class="answer_box_bottom">
+                        <div class="answer_box_imgdiv">
+                            <img src="resources/images/ship_serenity.png" alt="drawing of the serenity">
+                        </div>
+                        <p>Your home is aboard Serenity from the tv series <span class="movie_title">Firefly</span>. You have a close group of friends, and you always seem to stumble into trouble together. You also enjoy speaking random mandarin.</p>
+                    </div>
+                </div>
+                <div class="answer_box result_eaglefive">
+                    <div class="answer_box_title">
+                        <h3>Your home ship is:</h3>
+                        <h2>Eagle 5</h2>
+                    </div>
+                    <div class="answer_box_bottom">
+                        <div class="answer_box_imgdiv">
+                            <img src="resources/images/ship_eagle5.png" alt="drawing of the eagle five">
+                        </div>
+                        <p>Your home is aboard the Eagle 5 from the movie <span class="movie_title">Spaceballs</span>. Disorder doesn't bother you as much as most people, and shady characters don't intimidate you. You also REALLY like pizza.</p>
+                    </div>
+                </div>
+                <div class="answer_box result_rocinante">
+                    <div class="answer_box_title">
+                        <h3>Your home ship is:</h3>
+                        <h2>The Rocinante</h2>
+                    </div>
+                    <div class="answer_box_bottom">
+                        <div class="answer_box_imgdiv">
+                            <img src="resources/images/ship_rocinante.png" alt="drawing of the rocinante">
+                        </div>
+                        <p>Your home is aboard the Rocinante from the tv series <span class="movie_title">The Expanse</span>. You take your job seriously and you believe in fighting for the greater good.  You are also very aware of the power of gravity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <p>&copy; Melanie Phillips 2018</p>
+            <p>Need to report a repair?</p>
         </div>
-        <div class="question2 question">
-            <p class="questiononly">2 - Your shipmate bestie is:</p>
-            <label for="lady">A badass lady</label>
-            <input type="radio" class="answer nostromo bsg rocinante" name="q2" id="lady" value"1">
-            <label for="smartass">A smart ass</label>
-            <input type="radio" class="answer milano" name="q2" id="smartass" value "1">
-            <label for="herodick">A hero, but also kind of a dick</label>
-            <input type="radio" class="answer millfalc eaglefive" name="q2" id="herodick" value "1">            
-            <label for="orangehat">A guy with an orange knitted hat</label>
-            <input type="radio" class="answer firefly" name="q2" id="orangehat" value "1">
-            <label for="android">An android</label>
-            <input type="radio" class="answer enterprise" name="q2" id="android" value "1">
-        </div>
-        <div class="question3 question">
-            <p class="questiononly">3 - Your ideal ship size is:</p>
-            <label for="large">Large, the more the merrier</label>
-            <input type="radio" class="answer enterprise bsg" name="q3" id="large" value "1">
-            <label for="small">A tight knit crew</label>
-            <input type="radio" class="answer nostromo milano millfalc serenity eaglefive rocinante" name="q3" id="small" value "1">
-        </div>
-        <div class="question4 question">
-            <p class="questiononly">4 - Your core purpose is:</p>
-            <label for="research">Reasearch</label>
-            <input type="radio" class="answer nostromo" name="q4" id="research" value "1">
-            <label for="exploration">Exploration</label>
-            <input type="radio" class="answer enterprise" name="q4" id="exploration" value "1">
-            <label for="smuggling">Smuggling</label>
-            <input type="radio" class="answer millfalc serenity eaglefive" name="q4" id="smuggling" value "1">
-            <label for="shooten">Shoot'n</label>
-            <input type="radio" class="answer milano" name="q4" id="shooten" value "1">
-            <label for="colonize">Colonization</label>
-            <input type="radio" class="answer bsg rocinante" name="q4" id="colonize" value "1">            
-        </div>
-        <div class="question5 question">
-            <p class="questiononly">5 - Your maintenance is performed by:</p>
-            <label for="skilled">A skilled mechanic</label>
-            <input type="radio" class="answer milano serenity rocinante" name="q5" id="skilled" value "1">
-            <label for="questionable">A questionable mechanic</label>
-            <input type="radio" class="answer millfalc eaglefive" name="q5" id="questionable" value "1">
-            <label for="department">A department or group of mechanics/engineers</label>
-            <input type="radio" class="answer nostromo bsg enterprise" name="q5" id="department" value "1">
-        </div>
-        <input type="submit" value="Beam Me Up!">
-    </form>
-    <input class="reset_button" type="submit" value="I don't belong here!">
-    
-    <!-- This is where the answer divs start -->
-    <div class="answer_box result_nostromo">
-        <img src="resources/images/ship_nostromo.png" alt="drawing of the nostromo">
-    </div>
-    <div class="answer_box result_milano">
-        <img src="resources/images/ship_milano.png" alt="drawing of the milano">
-    </div>
-    <div class="answer_box result_millfalc">
-        <img src="resources/images/ship_falcon.png" alt="drawing of the millenium falcon">
-    </div>
-    <div class="answer_box result_enterprise">
-        <img src="resources/images/ship_enterprise.png" alt="drawing of the enterprise">
-    </div>
-    <div class="answer_box result_bsg">
-        <img src="resources/images/ship_battlestar.png" alt="drawing of the battlestar gallactica">
-    </div>
-    <div class="answer_box result_serenity">
-        <img src="resources/images/ship_serenity.png" alt="drawing of the serenity">
-    </div>
-    <div class="answer_box result_eaglefive">
-        <img src="resources/images/ship_eagle5.png" alt="drawing of the eagle five">
-    </div>
-    <div class="answer_box result_rocinante">
-        <img src="resources/images/ship_rocinante.png" alt="drawing of the rocinante">
-    </div>
-
+    </footer>
 
     <!-- This is where the scripts begin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
