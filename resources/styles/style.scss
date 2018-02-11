@@ -40,7 +40,7 @@ img {
 
 .question   {
     background: $color5;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -58,6 +58,10 @@ img {
     width: 150px;
 }
 
+.button:hover   {
+    background: $color1;
+}
+
 .form_buttons {
     display: flex;
     justify-content: space-between;
@@ -69,7 +73,7 @@ img {
     align-items: center;
 }
 
-// Hide answers on load - JS will show
+// Hide answers on load - JS will show once submitted
 .answer_box {
     display: none;
     background: $color2;

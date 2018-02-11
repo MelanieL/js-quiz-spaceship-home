@@ -120,6 +120,13 @@ shipHome.events = function () {
         location.reload();
     });
 
+    // This is where the radio button styling starts
+    $('input').iCheck({
+        checkboxClass: 'icheckbox_flat',
+        radioClass: 'iradio_flat'
+    });
+
+    // This is where my event script ends
     };
 
 shipHome.init = function () {

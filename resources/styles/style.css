@@ -550,7 +550,18 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   font-family: "Orbitron", sans-serif;
   font-weight: 700;
+  line-height: 1.5;
   text-align: center; }
+
+h1 {
+  margin-top: 0; }
+
+a, a:visited {
+  color: #bbbbaa;
+  text-decoration: none; }
+
+a:hover {
+  color: white; }
 
 .questiononly {
   font-family: "Orbitron", sans-serif; }
@@ -572,13 +583,19 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-perspective: 400px;
   perspective: 400px;
   /* The rest is totally up to personal styling preferences */
-  color: rgba(187, 187, 170, 0.75);
   font-family: "Raleway", sans-serif;
   font-size: 200%;
   font-weight: 600;
   letter-spacing: 6px;
   line-height: 150%;
-  text-align: justify; }
+  text-align: justify;
+  padding: 50px 80px; }
+
+.star-wars h1 {
+  color: white; }
+
+.star-wars h2 {
+  color: #bbbbaa; }
 
 .crawl {
   /* Position the element so we can adjust the top property in the animation */
@@ -678,8 +695,8 @@ img {
   width: 100%; }
 
 .question {
-  background: #aa8866;
-  border-radius: 10px;
+  background: rgba(170, 136, 102, 0.75);
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,6 +717,9 @@ img {
   font-size: 18px;
   width: 150px; }
 
+.button:hover {
+  background: #111122; }
+
 .form_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,7 +737,7 @@ img {
 
 .answer_box {
   display: none;
-  background: #666666;
+  background: rgba(102, 102, 102, 0.75);
   border-radius: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
