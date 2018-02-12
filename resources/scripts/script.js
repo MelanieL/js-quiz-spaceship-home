@@ -113,25 +113,29 @@ shipHome.events = function () {
         else {
             console.log("something went wrong!");
         }
-    });
 
+        
+        
+    });
+    
     // This is where the reset command starts
     $('.reset_button').click(function () {
         location.reload();
     });
-
+    
     // This is where the radio button styling starts
     $('input').iCheck({
         checkboxClass: 'icheckbox_flat',
         radioClass: 'iradio_flat'
     });
-
+    
     // This is where my event script ends
-    };
+};
+
 
 shipHome.init = function () {
-    shipHome.events();
     $('input').prop('checked', false);
+    shipHome.events();
 };
 
 $(function(){

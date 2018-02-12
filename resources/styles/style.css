@@ -529,9 +529,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 /* Coolors Exported Palette - coolors.co/111122-666666-333344-bbbbaa-aa8866 */
 /* RGB */
-* {
-  outline: 1px solid red; }
-
 .wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -708,6 +705,9 @@ img {
   padding: 10px 20px;
   width: 80%; }
 
+.iradio_flat {
+  margin-right: 10px; }
+
 .button {
   background: #333344;
   border: none;
@@ -780,6 +780,14 @@ img {
 .answer_box_bottom p {
   padding: 0px 10px; }
 
+.result_rocinante .answer_box_imgdiv {
+  padding: 10px;
+  text-align: center;
+  width: 40%; }
+
+.result_rocinante img {
+  width: 75%; }
+
 footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,3 +808,58 @@ footer p:first-of-type {
 footer p:last-of-type {
   text-align: right;
   width: 40%; }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .crawl {
+    -webkit-animation: none;
+    animation: none; } }
+
+@media (max-width: 525px) {
+  .crawl h1 {
+    font-size: 22px; }
+  .crawl h2,
+  .crawl p {
+    font-size: 18px; }
+  .question {
+    width: 100%; }
+  .question p {
+    line-height: 2; }
+  .iradio_flat {
+    margin-right: 5px; }
+  .form_buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .reset_button {
+    margin-top: 30px; }
+  .star-wars {
+    font-size: 140%;
+    height: unset;
+    letter-spacing: normal;
+    padding: 30px 20px; }
+  .answer_box_title,
+  .answer_box_bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .answer_box_title h2 {
+    margin-top: 0; }
+  .result_rocinante .answer_box_imgdiv {
+    width: 100%; }
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  footer .wrapper p {
+    text-align: center;
+    width: 80%; } }
