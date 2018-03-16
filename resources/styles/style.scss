@@ -48,6 +48,14 @@ img {
     width: 80%;
 }
 
+.questiononly {
+    letter-spacing: 3px;
+}
+
+label {
+    line-height: 2;
+}
+
 .iradio_flat {
     margin-right: 10px;
 }
@@ -114,6 +122,10 @@ img {
     padding: 0px 10px;
 }
 
+label:hover {
+    color: $color4;
+}
+
 .result_rocinante .answer_box_imgdiv {
     padding: 10px;
     text-align: center;
@@ -162,7 +174,7 @@ footer p:last-of-type {
         width: 100%;
     }
 
-    .question p {
+    .question label {
 	    line-height: 2;
     }
 

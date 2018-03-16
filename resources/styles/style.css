@@ -705,6 +705,12 @@ img {
   padding: 10px 20px;
   width: 80%; }
 
+.questiononly {
+  letter-spacing: 3px; }
+
+label {
+  line-height: 2; }
+
 .iradio_flat {
   margin-right: 10px; }
 
@@ -780,6 +786,9 @@ img {
 .answer_box_bottom p {
   padding: 0px 10px; }
 
+label:hover {
+  color: #bbbbaa; }
+
 .result_rocinante .answer_box_imgdiv {
   padding: 10px;
   text-align: center;
@@ -823,7 +832,7 @@ footer p:last-of-type {
     font-size: 18px; }
   .question {
     width: 100%; }
-  .question p {
+  .question label {
     line-height: 2; }
   .iradio_flat {
     margin-right: 5px; }

@@ -114,8 +114,6 @@ shipHome.events = function () {
             console.log("something went wrong!");
         }
 
-        
-        
     });
     
     // This is where the reset command starts
@@ -132,7 +130,6 @@ shipHome.events = function () {
     // This is where my event script ends
 };
 
-
 shipHome.init = function () {
     $('input').prop('checked', false);
     shipHome.events();
@@ -141,11 +138,3 @@ shipHome.init = function () {
 $(function(){
     shipHome.init();
 });
-
-// Need to allow user to only select one answer to each question - Done
-// On submit, need add +1 to each property in shipHome where the answer was ticked - Done
-// Need to evaluate totals for each ship - Done
-// Need to determine which ship is the highest number - Done
-// Need to display only the ship that is the answer on submit, the rest are always hidden
-// Need to also determine what happens if there is a tie (random?)
-// Need to display ship/answer

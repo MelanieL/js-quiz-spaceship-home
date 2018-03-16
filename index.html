@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>A Ship to Call Home</title>
+    <title>Quiz - A Ship to Call Home</title>
+    <meta name="description" content="A quiz to determine the pop culture spaceship where you would feel most at home." />
     <!-- Favicon from the noun project: Star by Ilaria Bernareggi from the Noun Project -->
     <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="57x57" href="resources/images/apple-touch-icon-57x57.png">
@@ -27,7 +28,25 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900|Raleway:400,400i,500,500i,700" rel="stylesheet">
     <link href="resources/plugins/icheck/flat/flat.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='resources/styles/style.css'>
-    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a80e9c6e45fbb001342feb9&product=inline-share-buttons"></script>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@MountainMel">
+    <meta name="twitter:title" content="Quiz - A Ship to Call Home">
+    <meta name="twitter:description" content="A quiz to determine the pop culture spaceship where you would feel most at home.">
+    <meta name="twitter:creator" content="@MountainMel">
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <!-- <meta name="twitter:image" content="http://www.example.com/image.jpg"> -->
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Quiz - A Ship to Call Home" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.melanie-phillips.com/spacequiz/" />
+    <!-- <meta property="og:image" content="http://example.com/image.jpg" /> -->
+    <meta property="og:description" content="A quiz to determine the pop culture spaceship where you would feel most at home." />
+    <meta property="og:site_name" content="Quiz - A Ship to Call Home" />
+    <!-- <meta property="fb:admins" content="Facebook numeric ID" /> -->
+
 </head>
 <body>
         <header class="star-wars">
@@ -45,68 +64,67 @@
                     <div class="question1 question">
                         <p class="questiononly">1. How do you feel about having an animal on board?</p>
                         <label for="fur" class="answer">
-                            <p><input type="radio" class="nostromo milano millfalc enterprise eaglefive" name="q1" id="fur" value="1"> I don’t mind a little fur</p>
+                            <input type="radio" class="nostromo milano millfalc enterprise eaglefive" name="q1" id="fur" value="1" required> I don’t mind a little fur
                         </label>
                         <label for="hardno" class="answer">
-                            <p><input type="radio" class="bsg serenity rocinante" name="q1" id="hardno" value="1"> Hard no</p>
+                            <input type="radio" class="bsg serenity rocinante" name="q1" id="hardno" value="1"> Hard no
                         </label>
-                        
                     </div>
                     <div class="question2 question">
                         <p class="questiononly">2. Your shipmate bestie is:</p>
                         <label for="lady">
-                            <p><input type="radio" class="answer nostromo bsg rocinante" name="q2" id="lady" value "1"> A badass lady</p>
+                            <input type="radio" class="answer nostromo bsg rocinante" name="q2" id="lady" value "1" required> A badass lady
                         </label>
                         <label for="smartass">
-                            <p><input type="radio" class="answer milano" name="q2" id="smartass" value "1"> A smart ass</p>
+                            <input type="radio" class="answer milano" name="q2" id="smartass" value "1"> A smart ass
                         </label>
                         <label for="herodick">
-                            <p><input type="radio" class="answer millfalc eaglefive" name="q2" id="herodick" value "1"> A hero, but also kind of a dick</p>
+                            <input type="radio" class="answer millfalc eaglefive" name="q2" id="herodick" value "1"> A hero, but also kind of a dick
                         </label>
                         <label for="orangehat">
-                            <p><input type="radio" class="answer firefly" name="q2" id="orangehat" value "1"> A guy with an orange knitted hat</p>
+                            <input type="radio" class="answer firefly" name="q2" id="orangehat" value "1"> A guy with an orange knitted hat
                         </label>
                         <label for="android">
-                            <p><input type="radio" class="answer enterprise" name="q2" id="android" value "1"> An android</p>
+                            <input type="radio" class="answer enterprise" name="q2" id="android" value "1"> An android
                         </label>
                     </div>
                     <div class="question3 question">
                         <p class="questiononly">3. Your ideal ship size is:</p>
                         <label for="large">
-                            <p><input type="radio" class="answer enterprise bsg" name="q3" id="large" value "1"> Large, the more the merrier</p>
+                            <input type="radio" class="answer enterprise bsg" name="q3" id="large" value "1" required> Large, the more the merrier
                         </label>
                         <label for="small">
-                            <p><input type="radio" class="answer nostromo milano millfalc serenity eaglefive rocinante" name="q3" id="small" value "1"> A tight knit crew</p>
+                            <input type="radio" class="answer nostromo milano millfalc serenity eaglefive rocinante" name="q3" id="small" value "1"> A tight knit crew
                         </label>
                     </div>
                     <div class="question4 question">
                         <p class="questiononly">4. Your core purpose is:</p>
                         <label for="research">
-                            <p><input type="radio" class="answer nostromo" name="q4" id="research" value "1"> Reasearch</p>
+                            <input type="radio" class="answer nostromo" name="q4" id="research" value "1" required> Reasearch
                         </label>
                         <label for="exploration">
-                            <p><input type="radio" class="answer enterprise" name="q4" id="exploration" value "1"> Exploration</p>
+                            <input type="radio" class="answer enterprise" name="q4" id="exploration" value "1"> Exploration
                         </label>
                         <label for="smuggling">
-                            <p><input type="radio" class="answer millfalc serenity eaglefive" name="q4" id="smuggling" value "1"> Smuggling</p>
+                            <input type="radio" class="answer millfalc serenity eaglefive" name="q4" id="smuggling" value "1"> Smuggling
                         </label>
                         <label for="shooten">
-                            <p><input type="radio" class="answer milano" name="q4" id="shooten" value "1"> Shoot'n</p>
+                            <input type="radio" class="answer milano" name="q4" id="shooten" value "1"> Shoot'n
                         </label>
                         <label for="colonize">
-                            <p><input type="radio" class="answer bsg rocinante" name="q4" id="colonize" value "1"> Colonization</p>
+                            <input type="radio" class="answer bsg rocinante" name="q4" id="colonize" value "1"> Colonization
                         </label>
                     </div>
                     <div class="question5 question">
                         <p class="questiononly">5. Your maintenance is performed by:</p>
                         <label for="skilled">
-                            <p><input type="radio" class="answer milano serenity rocinante millfalc" name="q5" id="skilled" value "1"> A skilled mechanic</p>
+                            <input type="radio" class="answer milano serenity rocinante millfalc" name="q5" id="skilled" value "1" required> A skilled mechanic
                         </label>
                         <label for="questionable">
-                            <p><input type="radio" class="answer eaglefive" name="q5" id="questionable" value "1"> A questionable mechanic</p>
+                            <input type="radio" class="answer eaglefive" name="q5" id="questionable" value "1"> A questionable mechanic
                         </label>
                         <label for="department">
-                            <p><input type="radio" class="answer nostromo bsg enterprise" name="q5" id="department" value "1"> A department or group of mechanics/engineers</p>
+                            <input type="radio" class="answer nostromo bsg enterprise" name="q5" id="department" value "1"> A department or group of mechanics/engineers
                         </label>
                     </div>
                     <div class="form_buttons">
@@ -131,7 +149,8 @@
                         </div>
                         <p>Your home is aboard the USCSS Nostromo from the movie <span class="movie_title">Alien</span>. You aren't afraid to get your hands dirty, and you aren't easily intimidated. You also like cats.</p>
                     </div>
-                    <div class="sharethis-inline-share-buttons"></div>
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
                 <div class="answer_box result_milano">
                     <div class="answer_box_title">
@@ -144,6 +163,7 @@
                         </div>
                         <p>Your home is aboard the Milano from the movie <span class="movie_title">Guardians of the Galaxy</span>. You aren't afraid to crack a joke, and you often run into situations without a plan. You also like raccoons.</p>
                     </div>
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
                 <div class="answer_box result_millfalc">
                     <div class="answer_box_title">
@@ -156,6 +176,7 @@
                         </div>
                         <p>Your home is aboard the Millenium Falcon from the movie <span class="movie_title">Star Wars</span>. You aren't afraid of adventure, and you enjoy being surrounded by an assortment of personalities. You also like wookies.</p>
                     </div>
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
                 <div class="answer_box result_enterprise">
                     <div class="answer_box_title">
@@ -168,6 +189,7 @@
                         </div>
                         <p>Your home is aboard the Enterprise from the tv series <span class="movie_title">Star Trek</span>. You love a constant change of scenery, and you enjoy learning new things. You also like red shirts.</p>
                     </div>
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
                 <div class="answer_box result_bsg">
                     <div class="answer_box_title">
@@ -180,6 +202,7 @@
                         </div>
                         <p>Your home is aboard the Battlestar Galactica from the tv series <span class="movie_title">Battlestar Galactica</span>. You are always ready for a fight, and you are constantly on the lookout for people who aren't what they seem. You also like to swear a frakking lot.</p>
                     </div>
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
                 <div class="answer_box result_serenity">
                     <div class="answer_box_title">
@@ -192,6 +215,7 @@
                         </div>
                         <p>Your home is aboard Serenity from the tv series <span class="movie_title">Firefly</span>. You have a close group of friends, and you always seem to stumble into trouble together. You also enjoy speaking random mandarin.</p>
                     </div>
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
                 <div class="answer_box result_eaglefive">
                     <div class="answer_box_title">
@@ -204,6 +228,7 @@
                         </div>
                         <p>Your home is aboard the Eagle 5 from the movie <span class="movie_title">Spaceballs</span>. Disorder doesn't bother you as much as most people, and shady characters don't intimidate you. You also really like pizza.</p>
                     </div>
+                    <div class="addthis_inline_share_toolbox"></div>        
                 </div>
                 <div class="answer_box result_rocinante">
                     <div class="answer_box_title">
@@ -216,6 +241,7 @@
                         </div>
                         <p>Your home is aboard the Rocinante from the tv series <span class="movie_title">The Expanse</span>. You take your job seriously and you believe in fighting for the greater good.  You're also very aware of the power of gravity.</p>
                     </div>
+                    <div class="addthis_inline_share_toolbox"></div>                    
                 </div>
             </div>
         </section>
@@ -232,5 +258,8 @@
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script type="text/javascript" src="resources/scripts/script.js"></script>
     <script src="resources/scripts/icheck.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a89a5b6930e3dff"></script>
+
 </body>
 </html>
